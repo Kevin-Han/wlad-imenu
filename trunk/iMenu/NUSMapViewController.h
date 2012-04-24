@@ -1,5 +1,5 @@
 //
-//  NUSAppDelegate.h
+//  NUSMapViewController.h
 //  iMenu
 //
 //  Created by Song Lei on 22/4/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NUSAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface NUSMapViewController : UIViewController
 
 @end
