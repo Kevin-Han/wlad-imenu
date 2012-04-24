@@ -25,6 +25,10 @@
 		56EC44F31544334A0060D664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EC44C91544334A0060D664 /* Foundation.framework */; };
 		56EC44FB1544334A0060D664 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56EC44F91544334A0060D664 /* InfoPlist.strings */; };
 		56EC44FE1544334A0060D664 /* iMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EC44FD1544334A0060D664 /* iMenuTests.m */; };
+		DDEA291D15463DDC00C0B219 /* Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291915463DDC00C0B219 /* Icon-small.png */; };
+		DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */; };
+		DDEA291F15463DDC00C0B219 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291B15463DDC00C0B219 /* Icon.png */; };
+		DDEA292015463DDC00C0B219 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291C15463DDC00C0B219 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,18 +55,22 @@
 		56EC44DA1544334A0060D664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		56EC44DC1544334A0060D664 /* NUSFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NUSFirstViewController.h; sourceTree = "<group>"; };
 		56EC44DD1544334A0060D664 /* NUSFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NUSFirstViewController.m; sourceTree = "<group>"; };
-		56EC44DF1544334A0060D664 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		56EC44E11544334A0060D664 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		56EC44DF1544334A0060D664 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../first.png; sourceTree = "<group>"; };
+		56EC44E11544334A0060D664 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../first@2x.png"; sourceTree = "<group>"; };
 		56EC44E31544334A0060D664 /* NUSSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NUSSecondViewController.h; sourceTree = "<group>"; };
 		56EC44E41544334A0060D664 /* NUSSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NUSSecondViewController.m; sourceTree = "<group>"; };
-		56EC44E61544334A0060D664 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		56EC44E81544334A0060D664 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		56EC44E61544334A0060D664 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../second.png; sourceTree = "<group>"; };
+		56EC44E81544334A0060D664 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../second@2x.png"; sourceTree = "<group>"; };
 		56EC44EF1544334A0060D664 /* iMenuTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMenuTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EC44F01544334A0060D664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		56EC44F81544334A0060D664 /* iMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMenuTests-Info.plist"; sourceTree = "<group>"; };
 		56EC44FA1544334A0060D664 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56EC44FC1544334A0060D664 /* iMenuTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMenuTests.h; sourceTree = "<group>"; };
 		56EC44FD1544334A0060D664 /* iMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMenuTests.m; sourceTree = "<group>"; };
+		DDEA291915463DDC00C0B219 /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small.png"; sourceTree = "<group>"; };
+		DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small@2x.png"; sourceTree = "<group>"; };
+		DDEA291B15463DDC00C0B219 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DDEA291C15463DDC00C0B219 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				56EC44CD1544334A0060D664 /* iMenu */,
+				DDEA291815463DDC00C0B219 /* Resource */,
 				56EC44F61544334A0060D664 /* iMenuTests */,
 				56EC44C61544334A0060D664 /* Frameworks */,
 				56EC44C41544334A0060D664 /* Products */,
@@ -122,17 +131,7 @@
 		56EC44CD1544334A0060D664 /* iMenu */ = {
 			isa = PBXGroup;
 			children = (
-				56EC44D61544334A0060D664 /* NUSAppDelegate.h */,
-				56EC44D71544334A0060D664 /* NUSAppDelegate.m */,
-				56EC44D91544334A0060D664 /* MainStoryboard.storyboard */,
-				56EC44DC1544334A0060D664 /* NUSFirstViewController.h */,
-				56EC44DD1544334A0060D664 /* NUSFirstViewController.m */,
-				56EC44DF1544334A0060D664 /* first.png */,
-				56EC44E11544334A0060D664 /* first@2x.png */,
-				56EC44E31544334A0060D664 /* NUSSecondViewController.h */,
-				56EC44E41544334A0060D664 /* NUSSecondViewController.m */,
-				56EC44E61544334A0060D664 /* second.png */,
-				56EC44E81544334A0060D664 /* second@2x.png */,
+				DDEA292215463EE400C0B219 /* Code */,
 				56EC44CE1544334A0060D664 /* Supporting Files */,
 			);
 			path = iMenu;
@@ -141,6 +140,7 @@
 		56EC44CE1544334A0060D664 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				56EC44D91544334A0060D664 /* MainStoryboard.storyboard */,
 				56EC44CF1544334A0060D664 /* iMenu-Info.plist */,
 				56EC44D01544334A0060D664 /* InfoPlist.strings */,
 				56EC44D31544334A0060D664 /* main.m */,
@@ -166,6 +166,35 @@
 				56EC44F91544334A0060D664 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDEA291815463DDC00C0B219 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				56EC44DF1544334A0060D664 /* first.png */,
+				56EC44E11544334A0060D664 /* first@2x.png */,
+				56EC44E61544334A0060D664 /* second.png */,
+				56EC44E81544334A0060D664 /* second@2x.png */,
+				DDEA291915463DDC00C0B219 /* Icon-small.png */,
+				DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */,
+				DDEA291B15463DDC00C0B219 /* Icon.png */,
+				DDEA291C15463DDC00C0B219 /* Icon@2x.png */,
+			);
+			name = Resource;
+			path = iMenu/Resource;
+			sourceTree = "<group>";
+		};
+		DDEA292215463EE400C0B219 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				56EC44D61544334A0060D664 /* NUSAppDelegate.h */,
+				56EC44D71544334A0060D664 /* NUSAppDelegate.m */,
+				56EC44DC1544334A0060D664 /* NUSFirstViewController.h */,
+				56EC44DD1544334A0060D664 /* NUSFirstViewController.m */,
+				56EC44E31544334A0060D664 /* NUSSecondViewController.h */,
+				56EC44E41544334A0060D664 /* NUSSecondViewController.m */,
+			);
+			name = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +274,10 @@
 				56EC44E21544334A0060D664 /* first@2x.png in Resources */,
 				56EC44E71544334A0060D664 /* second.png in Resources */,
 				56EC44E91544334A0060D664 /* second@2x.png in Resources */,
+				DDEA291D15463DDC00C0B219 /* Icon-small.png in Resources */,
+				DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */,
+				DDEA291F15463DDC00C0B219 /* Icon.png in Resources */,
+				DDEA292015463DDC00C0B219 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +485,7 @@
 				56EC45031544334A0060D664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56EC45041544334A0060D664 /* Build configuration list for PBXNativeTarget "iMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +494,7 @@
 				56EC45061544334A0060D664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
