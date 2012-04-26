@@ -25,6 +25,7 @@
 		56EC44FE1544334A0060D664 /* iMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EC44FD1544334A0060D664 /* iMenuTests.m */; };
 		DD03F2AD154687AA009CBEA3 /* NUSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD03F2AB154687A9009CBEA3 /* NUSMenuViewController.m */; };
 		DD03F2AF15468883009CBEA3 /* NUSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */; };
+		DD2372F21549045F007A2210 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2372F11549045F007A2210 /* MBProgressHUD.m */; };
 		DDEA291D15463DDC00C0B219 /* Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291915463DDC00C0B219 /* Icon-small.png */; };
 		DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */; };
 		DDEA291F15463DDC00C0B219 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291B15463DDC00C0B219 /* Icon.png */; };
@@ -67,6 +68,8 @@
 		DD03F2AA154687A9009CBEA3 /* NUSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUSMenuViewController.h; sourceTree = "<group>"; };
 		DD03F2AB154687A9009CBEA3 /* NUSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUSMenuViewController.m; sourceTree = "<group>"; };
 		DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUSMapViewController.m; sourceTree = "<group>"; };
+		DD2372F01549045F007A2210 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DD2372F11549045F007A2210 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		DDEA291915463DDC00C0B219 /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small.png"; sourceTree = "<group>"; };
 		DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small@2x.png"; sourceTree = "<group>"; };
 		DDEA291B15463DDC00C0B219 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -168,6 +171,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD2372EE1549040A007A2210 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DD2372F01549045F007A2210 /* MBProgressHUD.h */,
+				DD2372F11549045F007A2210 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		DDEA291815463DDC00C0B219 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 		DDEA292215463EE400C0B219 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				DD2372EE1549040A007A2210 /* MBProgressHUD */,
 				56EC44D61544334A0060D664 /* NUSAppDelegate.h */,
 				56EC44D71544334A0060D664 /* NUSAppDelegate.m */,
 				DD03F2AA154687A9009CBEA3 /* NUSMenuViewController.h */,
@@ -316,6 +329,7 @@
 				56EC44D81544334A0060D664 /* NUSAppDelegate.m in Sources */,
 				DD03F2AD154687AA009CBEA3 /* NUSMenuViewController.m in Sources */,
 				DD03F2AF15468883009CBEA3 /* NUSMapViewController.m in Sources */,
+				DD2372F21549045F007A2210 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
