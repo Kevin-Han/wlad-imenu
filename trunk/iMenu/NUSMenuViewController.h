@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "ApplicationCell.h"
+#import "CompositeSubviewBasedApplicationCell.h"
 
 @interface NUSMenuViewController : UIViewController <MBProgressHUDDelegate>
 
@@ -15,9 +17,13 @@
 @property (nonatomic, retain)   MBProgressHUD   *loginHUD;
 @property (nonatomic, retain)   NSString        *username;
 @property (nonatomic, retain)   NSString        *password;
+@property (nonatomic, retain)   NSArray         *data;
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *loginBarButtonItem;
 
+- (IBAction)orderBarButtonAction:(id)sender;
+
 - (IBAction)loginBarButtonAction:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *menuTableView;
 
 @end

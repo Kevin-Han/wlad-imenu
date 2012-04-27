@@ -26,6 +26,19 @@
 		DD03F2AD154687AA009CBEA3 /* NUSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD03F2AB154687A9009CBEA3 /* NUSMenuViewController.m */; };
 		DD03F2AF15468883009CBEA3 /* NUSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */; };
 		DD2372F21549045F007A2210 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2372F11549045F007A2210 /* MBProgressHUD.m */; };
+		DD6DF3B9154A90660077FBD2 /* ApplePie.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B3154A90660077FBD2 /* ApplePie.png */; };
+		DD6DF3BA154A90660077FBD2 /* BeefSandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B4154A90660077FBD2 /* BeefSandwich.png */; };
+		DD6DF3BB154A90660077FBD2 /* CheeseSandwich.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B5154A90660077FBD2 /* CheeseSandwich.png */; };
+		DD6DF3BC154A90660077FBD2 /* CreamRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B6154A90660077FBD2 /* CreamRoll.png */; };
+		DD6DF3BD154A90660077FBD2 /* LemonPie.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B7154A90660077FBD2 /* LemonPie.png */; };
+		DD6DF3BE154A90660077FBD2 /* MilkPudding.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6DF3B8154A90660077FBD2 /* MilkPudding.png */; };
+		DD900D31154A301200BAECB2 /* ApplicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD900D30154A301200BAECB2 /* ApplicationCell.m */; };
+		DD900D34154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD900D33154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m */; };
+		DD900D36154A424E00BAECB2 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD900D35154A424E00BAECB2 /* Data.plist */; };
+		DD900D44154A58FD00BAECB2 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD900D3A154A58FD00BAECB2 /* DarkBackground.png */; };
+		DD900D47154A58FD00BAECB2 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD900D3D154A58FD00BAECB2 /* LightBackground.png */; };
+		DD900D49154A58FD00BAECB2 /* StarsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD900D3F154A58FD00BAECB2 /* StarsBackground.png */; };
+		DD900D4A154A58FD00BAECB2 /* StarsForeground.png in Resources */ = {isa = PBXBuildFile; fileRef = DD900D40154A58FD00BAECB2 /* StarsForeground.png */; };
 		DDEA291D15463DDC00C0B219 /* Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291915463DDC00C0B219 /* Icon-small.png */; };
 		DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */; };
 		DDEA291F15463DDC00C0B219 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291B15463DDC00C0B219 /* Icon.png */; };
@@ -70,6 +83,21 @@
 		DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUSMapViewController.m; sourceTree = "<group>"; };
 		DD2372F01549045F007A2210 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		DD2372F11549045F007A2210 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DD6DF3B3154A90660077FBD2 /* ApplePie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplePie.png; sourceTree = "<group>"; };
+		DD6DF3B4154A90660077FBD2 /* BeefSandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeefSandwich.png; sourceTree = "<group>"; };
+		DD6DF3B5154A90660077FBD2 /* CheeseSandwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseSandwich.png; sourceTree = "<group>"; };
+		DD6DF3B6154A90660077FBD2 /* CreamRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreamRoll.png; sourceTree = "<group>"; };
+		DD6DF3B7154A90660077FBD2 /* LemonPie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LemonPie.png; sourceTree = "<group>"; };
+		DD6DF3B8154A90660077FBD2 /* MilkPudding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MilkPudding.png; sourceTree = "<group>"; };
+		DD900D2F154A301200BAECB2 /* ApplicationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCell.h; sourceTree = "<group>"; };
+		DD900D30154A301200BAECB2 /* ApplicationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCell.m; sourceTree = "<group>"; };
+		DD900D32154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeSubviewBasedApplicationCell.h; sourceTree = "<group>"; };
+		DD900D33154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeSubviewBasedApplicationCell.m; sourceTree = "<group>"; };
+		DD900D35154A424E00BAECB2 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		DD900D3A154A58FD00BAECB2 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
+		DD900D3D154A58FD00BAECB2 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
+		DD900D3F154A58FD00BAECB2 /* StarsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarsBackground.png; sourceTree = "<group>"; };
+		DD900D40154A58FD00BAECB2 /* StarsForeground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarsForeground.png; sourceTree = "<group>"; };
 		DDEA291915463DDC00C0B219 /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small.png"; sourceTree = "<group>"; };
 		DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small@2x.png"; sourceTree = "<group>"; };
 		DDEA291B15463DDC00C0B219 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -103,7 +131,8 @@
 		56EC44B81544334A0060D664 = {
 			isa = PBXGroup;
 			children = (
-				56EC44CD1544334A0060D664 /* iMenu */,
+				56EC44CD1544334A0060D664 /* Class */,
+				56EC44CE1544334A0060D664 /* Supporting Files */,
 				DDEA291815463DDC00C0B219 /* Resource */,
 				56EC44F61544334A0060D664 /* iMenuTests */,
 				56EC44C61544334A0060D664 /* Frameworks */,
@@ -131,12 +160,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		56EC44CD1544334A0060D664 /* iMenu */ = {
+		56EC44CD1544334A0060D664 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				DDEA292215463EE400C0B219 /* Code */,
-				56EC44CE1544334A0060D664 /* Supporting Files */,
+				DD900D2C154A2FDB00BAECB2 /* Cells */,
+				DD2372EE1549040A007A2210 /* MBProgressHUD */,
+				DDEA292215463EE400C0B219 /* Main */,
 			);
+			name = Class;
 			path = iMenu;
 			sourceTree = "<group>";
 		};
@@ -150,6 +181,7 @@
 				56EC44D51544334A0060D664 /* iMenu-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = iMenu;
 			sourceTree = "<group>";
 		};
 		56EC44F61544334A0060D664 /* iMenuTests */ = {
@@ -180,9 +212,39 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		DD900D2C154A2FDB00BAECB2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD900D2F154A301200BAECB2 /* ApplicationCell.h */,
+				DD900D30154A301200BAECB2 /* ApplicationCell.m */,
+				DD900D2E154A2FF000BAECB2 /* Composite Subview */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DD900D2E154A2FF000BAECB2 /* Composite Subview */ = {
+			isa = PBXGroup;
+			children = (
+				DD900D32154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.h */,
+				DD900D33154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m */,
+			);
+			name = "Composite Subview";
+			sourceTree = "<group>";
+		};
 		DDEA291815463DDC00C0B219 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DD6DF3B3154A90660077FBD2 /* ApplePie.png */,
+				DD6DF3B4154A90660077FBD2 /* BeefSandwich.png */,
+				DD6DF3B5154A90660077FBD2 /* CheeseSandwich.png */,
+				DD6DF3B6154A90660077FBD2 /* CreamRoll.png */,
+				DD6DF3B7154A90660077FBD2 /* LemonPie.png */,
+				DD6DF3B8154A90660077FBD2 /* MilkPudding.png */,
+				DD900D3A154A58FD00BAECB2 /* DarkBackground.png */,
+				DD900D3D154A58FD00BAECB2 /* LightBackground.png */,
+				DD900D3F154A58FD00BAECB2 /* StarsBackground.png */,
+				DD900D40154A58FD00BAECB2 /* StarsForeground.png */,
+				DD900D35154A424E00BAECB2 /* Data.plist */,
 				56EC44DF1544334A0060D664 /* first.png */,
 				56EC44E11544334A0060D664 /* first@2x.png */,
 				56EC44E61544334A0060D664 /* second.png */,
@@ -196,10 +258,9 @@
 			path = iMenu/Resource;
 			sourceTree = "<group>";
 		};
-		DDEA292215463EE400C0B219 /* Code */ = {
+		DDEA292215463EE400C0B219 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DD2372EE1549040A007A2210 /* MBProgressHUD */,
 				56EC44D61544334A0060D664 /* NUSAppDelegate.h */,
 				56EC44D71544334A0060D664 /* NUSAppDelegate.m */,
 				DD03F2AA154687A9009CBEA3 /* NUSMenuViewController.h */,
@@ -207,7 +268,7 @@
 				DD03F2A8154687A9009CBEA3 /* NUSMapViewController.h */,
 				DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */,
 			);
-			name = Code;
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +352,17 @@
 				DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */,
 				DDEA291F15463DDC00C0B219 /* Icon.png in Resources */,
 				DDEA292015463DDC00C0B219 /* Icon@2x.png in Resources */,
+				DD900D36154A424E00BAECB2 /* Data.plist in Resources */,
+				DD900D44154A58FD00BAECB2 /* DarkBackground.png in Resources */,
+				DD900D47154A58FD00BAECB2 /* LightBackground.png in Resources */,
+				DD900D49154A58FD00BAECB2 /* StarsBackground.png in Resources */,
+				DD900D4A154A58FD00BAECB2 /* StarsForeground.png in Resources */,
+				DD6DF3B9154A90660077FBD2 /* ApplePie.png in Resources */,
+				DD6DF3BA154A90660077FBD2 /* BeefSandwich.png in Resources */,
+				DD6DF3BB154A90660077FBD2 /* CheeseSandwich.png in Resources */,
+				DD6DF3BC154A90660077FBD2 /* CreamRoll.png in Resources */,
+				DD6DF3BD154A90660077FBD2 /* LemonPie.png in Resources */,
+				DD6DF3BE154A90660077FBD2 /* MilkPudding.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +402,8 @@
 				DD03F2AD154687AA009CBEA3 /* NUSMenuViewController.m in Sources */,
 				DD03F2AF15468883009CBEA3 /* NUSMapViewController.m in Sources */,
 				DD2372F21549045F007A2210 /* MBProgressHUD.m in Sources */,
+				DD900D31154A301200BAECB2 /* ApplicationCell.m in Sources */,
+				DD900D34154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

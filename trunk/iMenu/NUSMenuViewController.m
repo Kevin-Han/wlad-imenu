@@ -8,13 +8,22 @@
 
 #import "NUSMenuViewController.h"
 
+
+/*
+ Predefined colors to alternate the background color of each cell row by row
+ (see tableView:cellForRowAtIndexPath: and tableView:willDisplayCell:forRowAtIndexPath:).
+ */
+#define DARK_BACKGROUND  [UIColor colorWithRed:151.0/255.0 green:152.0/255.0 blue:155.0/255.0 alpha:1.0]
+#define LIGHT_BACKGROUND [UIColor colorWithRed:172.0/255.0 green:173.0/255.0 blue:175.0/255.0 alpha:1.0]
+
+
 @interface NUSMenuViewController ()
 - (void)showLoginView;
 @end
 
 @implementation NUSMenuViewController
 
-@synthesize flagCancelLogin=_flagCancelLogin, loginHUD=_loginHUD, username=_username, password=_password, loginBarButtonItem = _loginBarButtonItem;
+@synthesize flagCancelLogin=_flagCancelLogin, loginHUD=_loginHUD, username=_username, password=_password, loginBarButtonItem = _loginBarButtonItem, data=_data, menuTableView = _menuTableView;;
 
 #pragma mark - View lifecycle
 
@@ -22,6 +31,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _menuTableView.rowHeight = 100.0;
+    _menuTableView.backgroundColor = DARK_BACKGROUND;
+    _menuTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+	// Load the data.
+    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
+    
+    _data = [NSArray arrayWithContentsOfFile:dataPath];
+     
 }
 
 - (void)viewDidUnload
@@ -30,13 +49,31 @@
     [self setPassword:nil];
     [self setLoginHUD:nil];
     [self setLoginBarButtonItem:nil];
+    [self setData:nil];
     
+    [self setMenuTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
 
 
 #pragma mark - Action Methods
+
+- (IBAction)orderBarButtonAction:(id)sender 
+{
+    if([[_loginBarButtonItem title] isEqualToString:@"Login"])
+    {
+        UIAlertView *orderAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Please login first!" delegate:self cancelButtonTitle:@"OK"otherButtonTitles:nil, nil];
+        
+        [orderAlert show];
+    }
+    else if([[_loginBarButtonItem title] isEqualToString:@"Logout"])
+    {
+        UIAlertView *orderConfirm = [[UIAlertView alloc] initWithTitle:@"Order" message:@"Confirm" delegate:self cancelButtonTitle:@"OK"otherButtonTitles:@"Cancel", nil];
+        
+        [orderConfirm show];
+    }
+}
 
 - (IBAction)loginBarButtonAction:(id)sender
 {
@@ -150,5 +187,56 @@
         _flagCancelLogin = 1;
     }
 }
+
+#pragma mark -
+#pragma mark Table view methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_data count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ApplicationCell";
+    
+    ApplicationCell *cell = (ApplicationCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
+    if (cell == nil)
+    {
+        cell = [[CompositeSubviewBasedApplicationCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                                            reuseIdentifier:CellIdentifier];
+    }
+    
+	// Display dark and light background in alternate rows -- see tableView:willDisplayCell:forRowAtIndexPath:.
+    cell.useDarkBackground = (indexPath.row % 2 == 0);
+	
+	// Configure the data for the cell.
+    NSDictionary *dataItem = [_data objectAtIndex:indexPath.row];
+    cell.icon = [UIImage imageNamed:[dataItem objectForKey:@"Icon"]];
+    cell.price = [dataItem objectForKey:@"Price"];
+    cell.name = [dataItem objectForKey:@"Name"];
+    cell.numRatings = [[dataItem objectForKey:@"NumRatings"] intValue];
+    cell.rating = [[dataItem objectForKey:@"Rating"] floatValue];
+
+	
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = ((ApplicationCell *)cell).useDarkBackground ? DARK_BACKGROUND : LIGHT_BACKGROUND;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 @end
