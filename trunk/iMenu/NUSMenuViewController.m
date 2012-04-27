@@ -14,7 +14,7 @@
 
 @implementation NUSMenuViewController
 
-@synthesize flagLoginLogout=_flagLoginLogout, flagCancelLogin=_flagCancelLogin, loginHUD=_loginHUD, username=_username, password=_password;
+@synthesize flagCancelLogin=_flagCancelLogin, loginHUD=_loginHUD, username=_username, password=_password, loginBarButtonItem = _loginBarButtonItem;
 
 #pragma mark - View lifecycle
 
@@ -26,6 +26,11 @@
 
 - (void)viewDidUnload
 {
+    [self setUsername:nil];
+    [self setPassword:nil];
+    [self setLoginHUD:nil];
+    [self setLoginBarButtonItem:nil];
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -33,21 +38,24 @@
 
 #pragma mark - Action Methods
 
-- (IBAction)loginUIButton:(id)sender 
+- (IBAction)loginBarButtonAction:(id)sender
 {
-    if(!_flagLoginLogout)    // Login status
+    if([[_loginBarButtonItem title] isEqualToString:@"Login"])
     {
         UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Login" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil];
         
         [loginAlert setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
-
+        
         [loginAlert show];
     }
-    else // Logout status
+    else if([[_loginBarButtonItem title] isEqualToString:@"Logout"])
     {
-
+        UIAlertView *logoutAlert = [[UIAlertView alloc] initWithTitle:@"Logout" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Logout", nil];
+        
+        [logoutAlert show];
     }
 }
+
 
 #pragma mark - UIAlertView delegate
 
@@ -61,9 +69,15 @@
         _password = [[alertView textFieldAtIndex:1] text];
         
 
-        NSLog(@"%s Username=%@ Password=%@", __FUNCTION__, _username, _password);
+        NSLog(@"%s Login Username=%@ Password=%@", __FUNCTION__, _username, _password);
         
         [self showLoginView];
+    }
+    else if ([title isEqualToString:@"Logout"]) 
+    {
+        NSLog(@"%s Logout Username=%@ Password=%@", __FUNCTION__, _username, _password);
+
+        [_loginBarButtonItem setTitle:@"Login"];
     }
 }
 
@@ -100,6 +114,7 @@
         [_loginHUD stopIndicators];
         _loginHUD.labelText =  @"Succeed";
         _flagCancelLogin=1;
+        [_loginBarButtonItem setTitle:@"Logout"];
     }
     else
     {
