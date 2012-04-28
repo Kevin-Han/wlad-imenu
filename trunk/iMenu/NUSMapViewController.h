@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreLocation/CoreLocation.h>
+#import "MapAnnotation.h"
+ 
 @interface NUSMapViewController : UIViewController
-
+{
+    IBOutlet MKMapView *mapView;
+    IBOutlet UITextField *locationTitleField;
+}
 @end
