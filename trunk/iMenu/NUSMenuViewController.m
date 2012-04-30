@@ -233,10 +233,16 @@
     cell.backgroundColor = ((ApplicationCell *)cell).useDarkBackground ? DARK_BACKGROUND : LIGHT_BACKGROUND;
 }
 
+#pragma mark - Table view delegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NUSMenuDetailViewController *menuDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuDetail"];
+
+    menuDetail.dataItem = [_data objectAtIndex:indexPath.row];;
+    
+    [self.navigationController pushViewController:menuDetail animated:YES];
 }
-
-
 @end

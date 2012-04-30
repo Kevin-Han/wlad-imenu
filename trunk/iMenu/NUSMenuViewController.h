@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "ApplicationCell.h"
 #import "CompositeSubviewBasedApplicationCell.h"
+#import "NUSMenuDetailViewController.h"
 
 @interface NUSMenuViewController : UIViewController <MBProgressHUDDelegate>
 
@@ -24,6 +25,8 @@
 - (IBAction)orderBarButtonAction:(id)sender;
 
 - (IBAction)loginBarButtonAction:(id)sender;
+
 @property (strong, nonatomic) IBOutlet UITableView *menuTableView;
+
 
 @end
