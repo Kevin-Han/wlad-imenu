@@ -146,6 +146,17 @@
     // Do the login here currently use sleep method instead login
     sleep(5);
     
+    NSString *loginRequest = @"http://aspspider.info/zmtun/MobileRestaurantWS.asmx/Login";
+    
+    loginRequest = [loginRequest stringByAppendingFormat:@"?email=%@",_username];
+    loginRequest = [loginRequest stringByAppendingFormat:@"&password=%@",_password];
+    
+    //NSLog(@"login request%@", loginRequest);
+    
+    NUSWebService *webserviceModel = [[NUSWebService alloc] init];
+    NSString *loginResult = [webserviceModel getRespone:loginRequest];
+    //NSLog(@"login result%@", loginResult);
+    
     if([_username isEqualToString:_password])
     {
         [_loginHUD stopIndicators];

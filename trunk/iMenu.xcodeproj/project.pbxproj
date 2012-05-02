@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		263B19C6154C4A290033798E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263B19C5154C4A290033798E /* MapKit.framework */; };
 		263B19C9154C4A320033798E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263B19C8154C4A320033798E /* CoreLocation.framework */; };
+		4BB3B7441551775600711743 /* NUSWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB3B7431551775600711743 /* NUSWebService.m */; };
 		56EC44C81544334A0060D664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EC44C71544334A0060D664 /* UIKit.framework */; };
 		56EC44CA1544334A0060D664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EC44C91544334A0060D664 /* Foundation.framework */; };
 		56EC44CC1544334A0060D664 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EC44CB1544334A0060D664 /* CoreGraphics.framework */; };
@@ -70,6 +71,8 @@
 /* Begin PBXFileReference section */
 		263B19C5154C4A290033798E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		263B19C8154C4A320033798E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4BB3B7421551775600711743 /* NUSWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUSWebService.h; sourceTree = "<group>"; };
+		4BB3B7431551775600711743 /* NUSWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUSWebService.m; sourceTree = "<group>"; };
 		56EC44C31544334A0060D664 /* iMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EC44C71544334A0060D664 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		56EC44C91544334A0060D664 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -299,6 +302,8 @@
 		DDEA292215463EE400C0B219 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4BB3B7421551775600711743 /* NUSWebService.h */,
+				4BB3B7431551775600711743 /* NUSWebService.m */,
 				56EC44D61544334A0060D664 /* NUSAppDelegate.h */,
 				56EC44D71544334A0060D664 /* NUSAppDelegate.m */,
 				DD03F2AA154687A9009CBEA3 /* NUSMenuViewController.h */,
@@ -458,6 +463,7 @@
 				8F9DC6F3154AC786005E1B71 /* MapAnnotation.m in Sources */,
 				DD856CCD154E2A2C0012DD77 /* NUSMenuDetailViewController.m in Sources */,
 				DDFBCEDC1550D26400831067 /* NUSSettingsViewController.m in Sources */,
+				4BB3B7441551775600711743 /* NUSWebService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
