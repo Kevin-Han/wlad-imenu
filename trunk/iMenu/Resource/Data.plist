@@ -24,6 +24,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>ApplePie2x.png</string>
 	</dict>
 	<dict>
 		<key>ID</key>
@@ -47,6 +49,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>LemonPie2x.png</string>
 	</dict>
 	<dict>
 		<key>ID</key>
@@ -70,6 +74,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>MilkPudding2x.png</string>
 	</dict>
 	<dict>
 		<key>ID</key>
@@ -93,6 +99,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>CreamRoll2x.png</string>
 	</dict>
 	<dict>
 		<key>ID</key>
@@ -116,6 +124,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>CheeseSandwich2x.png</string>
 	</dict>
 	<dict>
 		<key>ID</key>
@@ -139,6 +149,8 @@ Total Fat                                  15.4 g
 Total Carbohydrate                 65.8 g                         
 
 Amount Serving Size: 1           169 g</string>
+		<key>Image</key>
+		<string>BeefSandwich2x.png</string>
 	</dict>
 </array>
 </plist>

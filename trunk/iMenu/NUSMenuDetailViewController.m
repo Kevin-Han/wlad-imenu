@@ -32,7 +32,7 @@
     
     self.title = [_dataItem objectForKey:@"Name"];
     
-    [_photoUIImageView setImage:[UIImage imageNamed:[_dataItem objectForKey:@"Icon"]]];
+    [_photoUIImageView setImage:[UIImage imageNamed:[_dataItem objectForKey:@"Image"]]];
 
     [_detailUILable setText:[_dataItem objectForKey:@"Detail"]];
     

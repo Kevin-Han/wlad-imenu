@@ -47,6 +47,14 @@
 		DDEA291E15463DDC00C0B219 /* Icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */; };
 		DDEA291F15463DDC00C0B219 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291B15463DDC00C0B219 /* Icon.png */; };
 		DDEA292015463DDC00C0B219 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA291C15463DDC00C0B219 /* Icon@2x.png */; };
+		DDF6F7EB1551358F00E7AE33 /* ApplePie2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7EA1551358F00E7AE33 /* ApplePie2x.png */; };
+		DDF6F7F315513BBE00E7AE33 /* CheeseSandwich2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7EE15513BBE00E7AE33 /* CheeseSandwich2x.png */; };
+		DDF6F7F515513BBE00E7AE33 /* LemonPie2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7F015513BBE00E7AE33 /* LemonPie2x.png */; };
+		DDF6F7FA15513D0D00E7AE33 /* BeefSandwich2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7F715513D0D00E7AE33 /* BeefSandwich2x.png */; };
+		DDF6F7FB15513D0D00E7AE33 /* CreamRoll2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7F815513D0D00E7AE33 /* CreamRoll2x.png */; };
+		DDF6F7FC15513D0D00E7AE33 /* MilkPudding2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF6F7F915513D0D00E7AE33 /* MilkPudding2x.png */; };
+		DDFBCEDC1550D26400831067 /* NUSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFBCEDB1550D26400831067 /* NUSSettingsViewController.m */; };
+		DDFBCEDF1550D28000831067 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DDFBCEDE1550D28000831067 /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +120,15 @@
 		DDEA291A15463DDC00C0B219 /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-small@2x.png"; sourceTree = "<group>"; };
 		DDEA291B15463DDC00C0B219 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DDEA291C15463DDC00C0B219 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DDF6F7EA1551358F00E7AE33 /* ApplePie2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplePie2x.png; sourceTree = "<group>"; };
+		DDF6F7EE15513BBE00E7AE33 /* CheeseSandwich2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseSandwich2x.png; sourceTree = "<group>"; };
+		DDF6F7F015513BBE00E7AE33 /* LemonPie2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LemonPie2x.png; sourceTree = "<group>"; };
+		DDF6F7F715513D0D00E7AE33 /* BeefSandwich2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeefSandwich2x.png; sourceTree = "<group>"; };
+		DDF6F7F815513D0D00E7AE33 /* CreamRoll2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreamRoll2x.png; sourceTree = "<group>"; };
+		DDF6F7F915513D0D00E7AE33 /* MilkPudding2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MilkPudding2x.png; sourceTree = "<group>"; };
+		DDFBCEDA1550D26400831067 /* NUSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUSSettingsViewController.h; sourceTree = "<group>"; };
+		DDFBCEDB1550D26400831067 /* NUSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUSSettingsViewController.m; sourceTree = "<group>"; };
+		DDFBCEDE1550D28000831067 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +265,13 @@
 		DDEA291815463DDC00C0B219 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DDF6F7F715513D0D00E7AE33 /* BeefSandwich2x.png */,
+				DDF6F7F815513D0D00E7AE33 /* CreamRoll2x.png */,
+				DDF6F7F915513D0D00E7AE33 /* MilkPudding2x.png */,
+				DDF6F7EE15513BBE00E7AE33 /* CheeseSandwich2x.png */,
+				DDF6F7F015513BBE00E7AE33 /* LemonPie2x.png */,
+				DDF6F7EA1551358F00E7AE33 /* ApplePie2x.png */,
+				DDFBCEDE1550D28000831067 /* settings.png */,
 				DD6DF3B3154A90660077FBD2 /* ApplePie.png */,
 				DD6DF3B4154A90660077FBD2 /* BeefSandwich.png */,
 				DD6DF3B5154A90660077FBD2 /* CheeseSandwich.png */,
@@ -285,6 +309,8 @@
 				DD03F2AE15468883009CBEA3 /* NUSMapViewController.m */,
 				8F9DC6F1154AC786005E1B71 /* MapAnnotation.h */,
 				8F9DC6F2154AC786005E1B71 /* MapAnnotation.m */,
+				DDFBCEDA1550D26400831067 /* NUSSettingsViewController.h */,
+				DDFBCEDB1550D26400831067 /* NUSSettingsViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -381,6 +407,13 @@
 				DD6DF3BC154A90660077FBD2 /* CreamRoll.png in Resources */,
 				DD6DF3BD154A90660077FBD2 /* LemonPie.png in Resources */,
 				DD6DF3BE154A90660077FBD2 /* MilkPudding.png in Resources */,
+				DDFBCEDF1550D28000831067 /* settings.png in Resources */,
+				DDF6F7EB1551358F00E7AE33 /* ApplePie2x.png in Resources */,
+				DDF6F7F315513BBE00E7AE33 /* CheeseSandwich2x.png in Resources */,
+				DDF6F7F515513BBE00E7AE33 /* LemonPie2x.png in Resources */,
+				DDF6F7FA15513D0D00E7AE33 /* BeefSandwich2x.png in Resources */,
+				DDF6F7FB15513D0D00E7AE33 /* CreamRoll2x.png in Resources */,
+				DDF6F7FC15513D0D00E7AE33 /* MilkPudding2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +457,7 @@
 				DD900D34154A301F00BAECB2 /* CompositeSubviewBasedApplicationCell.m in Sources */,
 				8F9DC6F3154AC786005E1B71 /* MapAnnotation.m in Sources */,
 				DD856CCD154E2A2C0012DD77 /* NUSMenuDetailViewController.m in Sources */,
+				DDFBCEDC1550D26400831067 /* NUSSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
