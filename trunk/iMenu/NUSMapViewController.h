@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MapAnnotation.h"
+#import <MapKit/MapKit.h>
  
-@interface NUSMapViewController : UIViewController
+@interface NUSMapViewController : UIViewController <CLLocationManagerDelegate> 
 {
+    CLLocationManager *locationManager;
     IBOutlet MKMapView *mapView;
     IBOutlet UITextField *locationTitleField;
+    IBOutlet UIActivityIndicatorView *activityIndicator;
 }
 @end

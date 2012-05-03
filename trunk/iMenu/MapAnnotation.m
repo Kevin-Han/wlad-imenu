@@ -20,4 +20,9 @@
     return self;
 }
 
+-(void) dealloc
+{
+	[title release];
+	[super dealloc];
+}
 @end
