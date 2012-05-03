@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBJson.h"
 
 @interface NUSWebService : NSObject
 //-(void) processResponse:(NSMutableData *)data;
 -(NSString *)getRespone:(NSString *) webServiceRequest;
+
+-(NSString *)getLoginResponse:(NSString *) webServiceResponse;
+
+-(NSMutableArray *) getStoreResponse:(NSString *) webServiceResponse;
 @end

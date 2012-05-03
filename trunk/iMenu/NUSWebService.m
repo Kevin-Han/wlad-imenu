@@ -11,7 +11,83 @@
 @implementation NUSWebService
 
 
+-(NSString *)getLoginResponse:(NSString *) webServiceResponse{
+    
+    
+    NSRange start = [webServiceResponse rangeOfString:@"WS\">"];
+    NSRange end = [webServiceResponse rangeOfString:@"</string>"];
+    
+    webServiceResponse = [webServiceResponse substringWithRange: 
+                          NSMakeRange (start.location+4, end.location-(start.location+4))];
+   // for testing 
+    webServiceResponse = [@"{\"result\":" stringByAppendingFormat:webServiceResponse];
+    webServiceResponse = [webServiceResponse stringByAppendingFormat:@"}"];
+    NSLog(@"webServiceResponse:%@",webServiceResponse);
+    // for testing 
 
+    SBJsonParser * parser = [[SBJsonParser alloc] init];  
+    NSError * error = nil;  
+    NSMutableDictionary *jsonDic = [parser objectWithString:webServiceResponse error:&error];  
+    NSString * dicUserInfo = [jsonDic objectForKey:@"result"];  
+    return dicUserInfo;
+
+}
+
+
+
+
+-(NSMutableArray *)getStoreResponse:(NSString *) webServiceResponse{
+    
+    
+    // for method call testing 
+    
+    /*
+     NSString *getStoreListRequest = 
+     @"http://aspspider.info/zmtun/MobileRestaurantWS.asmx/GetStores";
+     
+     NUSWebService *webserviceModel = [[NUSWebService alloc] init];
+     NSString *getStoreResult = [webserviceModel getRespone:getStoreListRequest];
+     NSLog(@"login result%@", getStoreResult);
+     
+     NSMutableArray *stores = [webserviceModel getStoreResponse:getStoreResult];*/
+    
+    // for method call
+    
+    
+    NSRange start = [webServiceResponse rangeOfString:@"["];
+    NSRange end = [webServiceResponse rangeOfString:@"]"];
+    
+    webServiceResponse = [webServiceResponse substringWithRange: 
+              NSMakeRange (start.location+1, end.location-(start.location+1))];
+    
+     // here is for the store test
+     webServiceResponse = [@"{\"storeList\":[" stringByAppendingFormat:webServiceResponse];
+     webServiceResponse = [webServiceResponse stringByAppendingFormat:@"]}"];
+     
+     // here is for the store test
+     
+    /* */
+    
+    SBJsonParser * parser = [[SBJsonParser alloc] init];  
+    
+    NSError * error = nil;  
+    
+    NSMutableDictionary *root = [[NSMutableDictionary alloc] initWithDictionary:[parser objectWithString:webServiceResponse error:&error]];  
+     
+    //SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];  
+    
+   // NSString *jsonString = [jsonWriter stringWithObject:root];    
+    
+    //[jsonWriter release];  
+    NSMutableArray * stores = [root objectForKey:@"storeList"];  
+    for(NSMutableDictionary * store  in stores)  
+    {  
+        NSLog(@"%@",[[store objectForKey:@"StoreID"] description]);  
+    } 
+    
+
+    return stores;
+}
 -(NSString *)getRespone:(NSString *) webServiceRequest{
 
     // for testing 
@@ -34,31 +110,15 @@
     if(error!=NULL){
         return NULL;
     }
-    
     NSString *result = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     
-    
+     // here is for the login test
+        
     NSLog(@" getRespone method result:%@",result );
-#if 0 
-    if ([result rangeOfString:@"UserID"].location == NSNotFound) {
-        NSLog(@"!!!string does not contain UserID");
-        
-    } else {
-        NSLog(@"!!!string contains UserID!")
-        NSRange start = [result rangeOfString:@"UserID"];
-         NSRange end = [result rangeOfString:@","];
-         
-         NSString *tempKeyValue = [result substringWithRange:NSMakeRange(start.location, end.location)];
-         NSLog(@"keyValue%@", tempKeyValue);
-        
-        
-        //NSDictionary *dictionary = [result JSONValue];
-        // NSLog(@"Dictionary value for \"UserID\" is \"%@\"", [dictionary objectForKey:@"UserID"]);
-    }
-#endif
-    return result;
+    
     
 
+        return result;
 
 }
 
