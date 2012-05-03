@@ -15,6 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSString *fileNameRead = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
+    orderList = [NSMutableArray arrayWithContentsOfFile:fileNameRead];
+    
     return YES;
 }
 							

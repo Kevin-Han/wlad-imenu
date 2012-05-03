@@ -39,13 +39,13 @@
     
     
     NSLog(@" getRespone method result:%@",result );
-    /*
+#if 0 
     if ([result rangeOfString:@"UserID"].location == NSNotFound) {
         NSLog(@"!!!string does not contain UserID");
         
     } else {
-        NSLog(@"!!!string contains UserID!");
-        /* NSRange start = [result rangeOfString:@"UserID"];
+        NSLog(@"!!!string contains UserID!")
+        NSRange start = [result rangeOfString:@"UserID"];
          NSRange end = [result rangeOfString:@","];
          
          NSString *tempKeyValue = [result substringWithRange:NSMakeRange(start.location, end.location)];
@@ -54,8 +54,8 @@
         
         //NSDictionary *dictionary = [result JSONValue];
         // NSLog(@"Dictionary value for \"UserID\" is \"%@\"", [dictionary objectForKey:@"UserID"]);
-    }*/
-    
+    }
+#endif
     return result;
     
 

@@ -127,9 +127,11 @@
 
 - (void)stepperChanged:(id)sender
 {
-    NSLog(@"%s stepper=%f", __FUNCTION__, _cell.stepper.value);
+    NSMutableDictionary *dataItem = [orderList objectAtIndex:_cell.stepper.tag];
     
-    _cell.stepperValue.text = [NSString stringWithFormat:@"%d", (int)_cell.stepper.value];
+    [dataItem setValue:[NSNumber numberWithDouble:_cell.stepper.value] forKey:@"Count"];
+    
+    _cell.stepperValue.text = [NSString stringWithFormat:@"%@", [dataItem valueForKey:@"Count"]];
 }
 @end
 

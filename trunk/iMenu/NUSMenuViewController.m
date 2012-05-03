@@ -63,15 +63,39 @@
 {
     if([[_loginBarButtonItem title] isEqualToString:@"Login"])
     {
-        UIAlertView *orderAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Please login first!" delegate:self cancelButtonTitle:@"OK"otherButtonTitles:nil, nil];
+        UIAlertView *orderAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Login First" delegate:self cancelButtonTitle:@"OK"otherButtonTitles:nil, nil];
         
         [orderAlert show];
     }
     else if([[_loginBarButtonItem title] isEqualToString:@"Logout"])
     {
-        UIAlertView *orderConfirm = [[UIAlertView alloc] initWithTitle:@"Order" message:@"Confirm" delegate:self cancelButtonTitle:@"OK"otherButtonTitles:@"Cancel", nil];
+        NSMutableDictionary *dataItem;
         
-        [orderConfirm show];
+        NSString *orderListMsg = [[NSString alloc] init];
+        
+        
+        for(int i=0;i<6;i++)
+        {
+            dataItem = [orderList objectAtIndex:i];
+            int count = (int)[dataItem valueForKey:@"Count"];
+            if (count!=0) 
+            {
+                orderListMsg  = [orderListMsg stringByAppendingFormat:@"%@    pcs:%@\n", [dataItem valueForKey:@"ID"], [dataItem valueForKey:@"Count"]];
+                NSLog(@"%s Name=%@ Count=%@", __FUNCTION__, [dataItem valueForKey:@"Name"], [dataItem valueForKey:@"Count"]);
+            }
+        }
+        
+        if(orderListMsg.length==0)
+        {
+             UIAlertView *orderEmpty = [[UIAlertView alloc] initWithTitle:@"Order" message:@"Order List Empty" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [orderEmpty show];
+        }
+        else 
+        {
+            UIAlertView *orderConfirm = [[UIAlertView alloc] initWithTitle:@"Order" message:orderListMsg delegate:self cancelButtonTitle:@"Cancel"otherButtonTitles:@"Order", nil];
+            
+            [orderConfirm show];
+        }
     }
 }
 
@@ -116,6 +140,11 @@
 
         [_loginBarButtonItem setTitle:@"Login"];
     }
+    else if ([title isEqualToString:@"Order"])
+    {
+        NSLog(@"%s title=%@", __FUNCTION__, title);
+         
+    }
 }
 
 
@@ -153,8 +182,8 @@
     
     //NSLog(@"login request%@", loginRequest);
     
-    NUSWebService *webserviceModel = [[NUSWebService alloc] init];
-    NSString *loginResult = [webserviceModel getRespone:loginRequest];
+    //NUSWebService *webserviceModel = [[NUSWebService alloc] init];
+    //NSString *loginResult = [webserviceModel getRespone:loginRequest];
     //NSLog(@"login result%@", loginResult);
     
     if([_username isEqualToString:_password])
@@ -234,6 +263,7 @@
     cell.name = [dataItem objectForKey:@"Name"];
     cell.numRatings = [[dataItem objectForKey:@"NumRatings"] intValue];
     cell.rating = [[dataItem objectForKey:@"Rating"] floatValue];
+    cell.stepper.tag = indexPath.row;
 
 	
     return cell;

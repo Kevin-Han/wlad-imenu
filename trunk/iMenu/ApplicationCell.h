@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "NUSAppDelegate.h"
+
 @interface ApplicationCell : UITableViewCell
 {
     BOOL useDarkBackground;
@@ -31,5 +33,6 @@
 @property(retain) NSString *price;
 @property(retain) UIStepper *stepper;
 @property(retain) UILabel *stepperValue;
+
 
 @end

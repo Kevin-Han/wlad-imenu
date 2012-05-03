@@ -6,7 +6,7 @@
 		<key>ID</key>
 		<string>A00001</string>
 		<key>Name</key>
-		<string>Apple Pie</string>
+		<string>Apple Pie      </string>
 		<key>NumRatings</key>
 		<integer>106</integer>
 		<key>Rating</key>
@@ -31,7 +31,7 @@ Amount Serving Size: 1           169 g</string>
 		<key>ID</key>
 		<string>A00002</string>
 		<key>Name</key>
-		<string>Lemon Pie</string>
+		<string>Lemon Pie      </string>
 		<key>NumRatings</key>
 		<integer>114</integer>
 		<key>Rating</key>
@@ -56,7 +56,7 @@ Amount Serving Size: 1           169 g</string>
 		<key>ID</key>
 		<string>A00003</string>
 		<key>Name</key>
-		<string>Milk Pudding</string>
+		<string>Milk Pudding   </string>
 		<key>NumRatings</key>
 		<integer>87</integer>
 		<key>Rating</key>
@@ -81,7 +81,7 @@ Amount Serving Size: 1           169 g</string>
 		<key>ID</key>
 		<string>A00004</string>
 		<key>Name</key>
-		<string>Cream Roll</string>
+		<string>Cream Roll     </string>
 		<key>NumRatings</key>
 		<integer>254</integer>
 		<key>Rating</key>
@@ -131,7 +131,7 @@ Amount Serving Size: 1           169 g</string>
 		<key>ID</key>
 		<string>A00006</string>
 		<key>Name</key>
-		<string>Beef Sandwich</string>
+		<string>Beef Sandwich  </string>
 		<key>NumRatings</key>
 		<integer>45</integer>
 		<key>Rating</key>

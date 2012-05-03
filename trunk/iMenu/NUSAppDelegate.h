@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+NSMutableArray *orderList;
+
 @interface NUSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -12,6 +12,7 @@
 #import "CompositeSubviewBasedApplicationCell.h"
 #import "NUSMenuDetailViewController.h"
 #import "NUSWebService.h"
+#import "NUSAppDelegate.h"
 
 @interface NUSMenuViewController : UIViewController <MBProgressHUDDelegate>
 
