@@ -9,7 +9,7 @@
 #import "NUSMenuDetailViewController.h"
 
 @interface NUSMenuDetailViewController ()
-
+- (void)shareToFriends;
 @end
 
 @implementation NUSMenuDetailViewController
@@ -33,8 +33,12 @@
     
     self.title = [_dataItem objectForKey:@"Name"];
     
+    UIBarButtonItem *shareBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStyleBordered target:self action:@selector(shareToFriends)];
+    
+    self.navigationItem.rightBarButtonItem = shareBarButton;
+    
     [_photoUIImageView setImage:[UIImage imageNamed:[_dataItem objectForKey:@"Image"]]];
-
+    
     [_detailUILable setText:[_dataItem objectForKey:@"Detail"]];
     
 	// Do any additional setup after loading the view.
@@ -49,5 +53,11 @@
     // Release any retained subviews of the main view.
 }
 
+#pragma mark - Private
+
+- (void)shareToFriends
+{
+    NSLog(@"%s", __FUNCTION__);
+}
 
 @end
