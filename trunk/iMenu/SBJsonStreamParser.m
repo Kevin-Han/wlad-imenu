@@ -57,10 +57,6 @@
 	return self;
 }
 
-- (void)dealloc {
-    self.state = nil;
-}
-
 #pragma mark Methods
 
 - (NSString*)tokenName:(sbjson_token_t)token {
